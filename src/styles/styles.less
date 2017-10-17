@@ -1,0 +1,120 @@
+@page-icon : 100px;
+@icon : 75px;
+
+@headerH: 40px;
+@footerH: 20px;
+@mainH: 100%;
+@main-border-style: 1px solid @base1;
+.layer10{z-index: 10;}
+.layer11{z-index: 11;}
+
+.default{
+  padding: @p;
+}
+
+html{
+  background-color: #ddd;
+  font-family: 'Century Gothic';
+  font-size: 12pt;
+  color: @b;
+}
+body{
+  width: 21cm;
+  margin: 0 auto;
+}
+#app{
+  background-color: @w;
+  padding: 1cm;
+  float: left;
+}
+header{
+  margin-bottom: 2cm;
+}
+nav{
+}
+footer{
+}
+
+main{
+}
+table{
+  td, th{
+    padding: .1cm;
+  }
+}
+h2{
+  .txt-r;
+  color: @base4;
+  border-bottom: 3px @base3 solid;
+}
+h3{
+  .txt-c;
+  padding: .25em 0;
+  border-radius: 2em 2em 0 0;
+  background-color: @base3;
+  &:before{
+    content: @fa-var-circle;
+    color: @w;
+    font-size: .8em;
+    padding-right: 1em;
+  }
+  &:after{
+    content: @fa-var-circle;
+    color: @w;
+    font-size: .8em;
+    padding-left: 1em;
+  }
+  font-size: 1.2em;
+  font-weight: normal;
+  // background-color: @base2;
+  // color: @w;
+  // padding: .2cm 1cm;
+}
+.flex-contener{
+  border-radius: 0 0 2em 2em;
+  border: solid 2px @base3;
+  padding: .2cm;
+  margin-bottom: .5cm;
+  // .flex;
+  // flex-direction: row;
+}
+.tag{
+  padding: .1cm;
+  min-width: 25%;
+  .tag-content{
+    border-radius: 1.5em;
+    width: 100%;
+    display: inline-block;
+    color: @w;
+    font-size: .9em;
+    padding: 0;
+    border: solid 1px @base2;
+    .label{
+      padding: .5em;
+      display: inline-block;
+    }
+    .score{
+      color: @base2;
+      background-color: @w;
+      padding: .5em 1em;
+      border-radius: 0 1.5em 1.5em 0;
+      .fr;
+      .txt-c;
+    }
+    background-color: @base2;
+    &.skill3{background-color: darken(@base2, 10%); font-weight: bold;}
+    &.skill2{background-color: lighten(@base2, 0);}
+    &.skill1{background-color: lighten(@base2, 10%);}
+  }
+}
+.page{
+  .col-12;
+  page-break-before: always;
+  page-break-inside: avoid;
+  &:not(:last-child)&:after{
+    color: @base4;
+    .col-12;
+    .txt-r;
+    content: @fa-var-arrow-right;
+  }
+}
