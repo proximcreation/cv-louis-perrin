@@ -27,7 +27,7 @@ export default {
       lastname: 'PERRIN',
       title: 'Développeur Frontend / Intégrateur / Graphiste',
       birthdate: '4 nov. 1983',
-      infos: 'PACSé, 2 enfants'
+      infos: 'Célibataire, 2 enfants'
     }
   },
   methods: {

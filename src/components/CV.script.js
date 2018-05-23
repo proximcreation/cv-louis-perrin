@@ -9,6 +9,13 @@ export default {
           items: [
             {
               type: 'event',
+              name : 'Déploiement de l’application MoeCAT sur la tournée Calogero',
+              date: 'mars. 2018',
+              organisation: 'MECAoctet',
+              description: 'Déploiement de l’application MoeCAT sur la tournée 2018 de Calogero. MoeCAT est une application industrielle de pilotage de moteurs asservis. L’application est dédiée au monde du spectacle.'
+            },
+            {
+              type: 'event',
               name : 'Lancement de l’application TAD',
               date: 'sept. 2017',
               organisation: 'ProximCréation',
@@ -104,6 +111,7 @@ export default {
             {name: 'Javascript', n: 3},
             {name: 'AngularJS', n: 3},
             {name: 'VueJS', n: 3},
+            {name: 'Electron', n: 3},
             {name: 'D3.js', n: 2},
             {name: 'HTML5 / CSS3', n: 3},
             {name: 'Node.js', n: 2},
