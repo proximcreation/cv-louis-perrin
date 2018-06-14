@@ -1,7 +1,7 @@
 # cv-louis-perrin
 
 > My CV
-> https://dist-crratqoxls.now.sh
+> https://dist-fytdmbteip.now.sh
 
 ## Build Setup
 

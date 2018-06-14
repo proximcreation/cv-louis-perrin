@@ -15,7 +15,7 @@
 html{
   background-color: #ddd;
   font-family: @base-font, 'Century Gothic', 'sans-serif';
-  font-size: 12pt;
+  font-size: 11pt;
   color: @b;
 }
 body{
@@ -28,7 +28,7 @@ body{
   float: left;
 }
 header{
-  margin-bottom: 2cm;
+  margin-bottom: 0.25cm;
 }
 nav{
 }
@@ -53,12 +53,14 @@ h3{
   border-radius: 2em 2em 0 0;
   background-color: @base3;
   &:before{
+    .fa;
     content: @fa-var-circle;
     color: @w;
     font-size: .8em;
     padding-right: 1em;
   }
   &:after{
+    .fa;
     content: @fa-var-circle;
     color: @w;
     font-size: .8em;
@@ -112,9 +114,28 @@ h3{
   page-break-before: always;
   page-break-inside: avoid;
   &:not(:last-child)&:after{
+    .fa;
     color: @base4;
     .col-12;
     .txt-r;
-    content: @fa-var-arrow-right;
+    @media print{
+      content: @fa-var-arrow-right;
+    }
+  }
+}
+.social{
+  margin-top: @p/2;
+  background-color: @base1;
+  padding: @p/4 @p*3 @p/4 @p;
+  .fl;
+  p{
+    padding: @p/2 0;
+    a{
+      .lnk-clr;
+      span{
+        font-size: .8em;
+        font-style: italic;
+      }
+    }
   }
 }

@@ -1,7 +1,6 @@
 <template>
   <div class="cv row">
     <div class="page">
-      
       <div class="col-12" v-for="cat in jobLifeLine">
         <h2>{{cat.name}}</h2>
         <div class="col-12 bg-base3" v-for="job in cat.items" v-if="job.type==='event'">
@@ -53,7 +52,6 @@
       </div>
     </div>
     <div class="page">
-        
       <h2 class="col-12">Compétences</h2>
       <div class="col-12" v-for="cat in skills">
         <h3>{{cat.name}}</h3>
